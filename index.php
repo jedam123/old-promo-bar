@@ -169,7 +169,7 @@
 			</section>
 			<footer>
 				<span>
-					<!-- &copy; <?php echo date('Y'); ?> All rights reserved by Marcin Madejski -->
+					&copy; <?php echo date('Y'); ?> All rights reserved by Marcin Madejski
 				</span>
 			</footer>
 		</div>
