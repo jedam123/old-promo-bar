@@ -1,0 +1,108 @@
+.header-content
+    position: relative
+    &__ghost-boby
+        height: 350px
+        background-image: url("../assets/images/ghost.svg")
+        background-size: cover
+        width: 365px
+        @media only screen and (max-width: 1199px)
+            height: 250px
+            width: 265px
+        background-repeat: no-repeat
+        position: absolute
+        right: -60px
+        top: 90px
+        @media only screen and (max-width: 575px)
+            display: none
+        transform: scale(0.5)
+        -webkit-transform: scale(0.5)
+        -webkit-animation: anim-boby ease-in-out 5s infinite alternate
+        animation: anim-boby ease-in-out 5s infinite alternate
+    &__ghost-casper
+        height: 350px
+        background-image: url("../assets/images/ghost.svg")
+        background-size: cover
+        width: 365px
+        @media only screen and (max-width: 1199px)
+            height: 250px
+            width: 265px
+        @media only screen and (max-width: 991px)
+            display: none
+        background-repeat: no-repeat
+        position: absolute
+        right: 120px
+        top: -120px
+        transform: scale(0.5)
+        -webkit-transform: scale(0.5)
+        @media only screen and (max-width: 991px)
+            transform: scale(0.3)
+            -webkit-transform: scale(0.3)
+        -webkit-animation: anim-casper ease-in-out 5s infinite alternate
+        animation: anim-casper ease-in-out 5s infinite alternate
+    &__ghost-meghan
+        height: 350px
+        background-image: url("../assets/images/ghost.svg")
+        background-size: cover
+        width: 365px
+        @media only screen and (max-width: 1199px)
+            height: 250px
+            width: 265px
+        @media only screen and (max-width: 991px)
+            display: none
+        background-repeat: no-repeat
+        position: absolute
+        right: 210px
+        top: 80px
+        transform: scale(0.5)
+        -webkit-transform: scale(0.5)
+        @media only screen and (max-width: 991px)
+            transform: scale(0.3)
+            -webkit-transform: scale(0.3)
+        -webkit-animation: anim-meghan ease-in-out 5s infinite alternate
+        animation: anim-meghan ease-in-out 5s infinite alternate
+    @-webkit-keyframes anim-boby
+        from
+            right: -60px
+            top: 90px
+            -webkit-transform: scale(0.5) rotate(0deg)
+        50%
+            right: -30px
+            top: 45px
+            -webkit-transform: scale(0.5) rotate(10deg)
+            fill: #000000
+        to
+            right: -60px
+            top: 90px
+            -webkit-transform: scale(0.5) rotate(-20deg)
+    @-webkit-keyframes anim-casper
+        from
+            right: 120px
+            top: -120px
+            -webkit-transform: scale(0.5) rotate(0deg)
+        50%
+            right: 90px
+            top: -60px
+            -webkit-transform: scale(0.5) rotate(10deg)
+            fill: #000000
+        to
+            right: 120px
+            top: -120px
+            @media only screen and (max-width: 991px)
+                right: -20px
+                top: -120px
+                -webkit-transform: scale(0.3) rotate(10deg)
+            -webkit-transform: scale(0.5) rotate(-20deg)
+    @-webkit-keyframes anim-meghan
+        from
+            right: 210px
+            top: 80px
+            -webkit-transform: scale(0.5) rotate(0deg)
+        50%
+            right: 105px
+            top: 130px
+            -webkit-transform: scale(0.5) rotate(10deg)
+            fill: #000000
+        to
+            right: 210px
+            top: 80px
+            -webkit-transform: scale(0.5) rotate(-20deg)
